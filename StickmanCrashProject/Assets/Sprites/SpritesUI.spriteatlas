@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SpritesUI
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: DefaultTexturePlatform
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: -1
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 8
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 4d378e0b22c10654cb78a2231d9272d2, type: 3}
+    - {fileID: 2800000, guid: d9f727cb14dd61a418df4340d3e40be4, type: 3}
+    - {fileID: 2800000, guid: 1d8c058d62eaf444eabc7f283b3c5b41, type: 3}
+    - {fileID: 2800000, guid: 501e80a1202f37046a1e31a2ca146dac, type: 3}
+    - {fileID: 2800000, guid: 6d245370e214fc249bfc3835f25f6f6c, type: 3}
+    - {fileID: 2800000, guid: 233357f5d38b9d44b954742f9fce7db2, type: 3}
+    - {fileID: 2800000, guid: dfb0cc14cd3e2604d9c2895f80afe208, type: 3}
+    - {fileID: 2800000, guid: 7bbc7cb0edb596944af5652fa8018316, type: 3}
+    - {fileID: 2800000, guid: 1cdff88e3779c4b4991c43230c5341c1, type: 3}
+    - {fileID: 2800000, guid: 9a47df5861f79774dba75cf5e80a68c2, type: 3}
+    - {fileID: 2800000, guid: 00ece1d366d12004b914ea9722b58d89, type: 3}
+    - {fileID: 2800000, guid: 6aa5b5182a021f645a0b6030022940a8, type: 3}
+    - {fileID: 2800000, guid: b001aed1824a2a04ea396695f1cd24ed, type: 3}
+    - {fileID: 2800000, guid: b2f7d80502f979743b5877dceee9b494, type: 3}
+    - {fileID: 2800000, guid: 9c29f3f2587859040a58d05da3615352, type: 3}
+    - {fileID: 2800000, guid: 240c6b3b484b8fb45b1dd19aba1ea940, type: 3}
+    - {fileID: 2800000, guid: 37cdbd8a05569e14c8c0b6c83fd0c055, type: 3}
+    - {fileID: 2800000, guid: e1a8746e4e73c7244b79e9ff3bfc9190, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 6d245370e214fc249bfc3835f25f6f6c, type: 3}
+  - {fileID: 21300000, guid: 7bbc7cb0edb596944af5652fa8018316, type: 3}
+  - {fileID: 21300000, guid: 501e80a1202f37046a1e31a2ca146dac, type: 3}
+  - {fileID: 21300000, guid: b001aed1824a2a04ea396695f1cd24ed, type: 3}
+  - {fileID: 21300000, guid: 9c29f3f2587859040a58d05da3615352, type: 3}
+  - {fileID: 21300000, guid: 00ece1d366d12004b914ea9722b58d89, type: 3}
+  - {fileID: 21300000, guid: dfb0cc14cd3e2604d9c2895f80afe208, type: 3}
+  - {fileID: 21300000, guid: b2f7d80502f979743b5877dceee9b494, type: 3}
+  - {fileID: 21300000, guid: 233357f5d38b9d44b954742f9fce7db2, type: 3}
+  - {fileID: 21300000, guid: 6aa5b5182a021f645a0b6030022940a8, type: 3}
+  - {fileID: 21300000, guid: 9a47df5861f79774dba75cf5e80a68c2, type: 3}
+  - {fileID: 21300000, guid: 37cdbd8a05569e14c8c0b6c83fd0c055, type: 3}
+  - {fileID: 21300000, guid: 4d378e0b22c10654cb78a2231d9272d2, type: 3}
+  - {fileID: 21300000, guid: 240c6b3b484b8fb45b1dd19aba1ea940, type: 3}
+  - {fileID: 21300000, guid: d9f727cb14dd61a418df4340d3e40be4, type: 3}
+  - {fileID: 21300000, guid: 1d8c058d62eaf444eabc7f283b3c5b41, type: 3}
+  - {fileID: 21300000, guid: e1a8746e4e73c7244b79e9ff3bfc9190, type: 3}
+  - {fileID: 21300000, guid: 1cdff88e3779c4b4991c43230c5341c1, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Group 3
+  - Group 8
+  - free-icon-locked-padlock-61457 2
+  - Rectangle 44
+  - Rectangle 943
+  - Group 861
+  - Group 5
+  - Rectangle 45
+  - Group 4
+  - Rectangle 8
+  - Group 854
+  - Rectangle 950
+  - Arrow 1
+  - Rectangle 947
+  - Rectangle 16
+  - dollar
+  - Vector 1
+  - Group 13
+  m_RenderDataMap: {}
+  m_Tag: SpritesUI
+  m_IsVariant: 0

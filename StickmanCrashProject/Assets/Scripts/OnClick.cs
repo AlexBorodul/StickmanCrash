@@ -3,16 +3,9 @@ using UnityEngine.SceneManagement;
 
 public class OnClick : MonoBehaviour
 {
+    public string SceneName;
     public void onClick()
     {
-        SceneManager.LoadScene("Game");
-    }
-}
-
-public class ExitGame : MonoBehaviour
-{
-    public void exitGame()
-    {
-        Application.Quit();
+        SceneManager.LoadScene(SceneName);
     }
 }
