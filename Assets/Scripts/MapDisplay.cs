@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class MapDisplay : MonoBehaviour
 {
@@ -29,5 +30,8 @@ public class MapDisplay : MonoBehaviour
         {
             _mapImage.color = Color.grey;
         }
+
+        _playButton.onClick.RemoveAllListeners();
+        _playButton.onClick.AddListener(() => SceneManager.LoadScene(map.sceneToLoad.name));
     }
 }

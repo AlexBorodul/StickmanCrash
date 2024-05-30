@@ -16,4 +16,4 @@ MonoBehaviour:
   mapName: "\u0422\u0440\u0430\u043C\u043F\u043B\u0438\u043D"
   mapDescription: "\u041A\u0430\u0440\u0442\u0430 \u0442\u0440\u0430\u043C\u043F\u043B\u0438\u043D"
   mapImage: {fileID: 21300000, guid: e1a8746e4e73c7244b79e9ff3bfc9190, type: 3}
-  sceneToLoad: {fileID: 102900000, guid: 7cc890a260aa0d941b5b7a05fb624c8c, type: 3}
+  sceneToLoad: {fileID: 102900000, guid: 785e4484afa1f2248a4b6ff130fd5815, type: 3}
