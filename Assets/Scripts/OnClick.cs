@@ -8,4 +8,9 @@ public class OnClick : MonoBehaviour
     {
         SceneManager.LoadScene(SceneName);
     }
+
+    public void OnChooseMapButtonClick()
+    {
+        SceneManager.LoadScene("Custom");
+    }
 }
