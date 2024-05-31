@@ -32,6 +32,6 @@ public class MapDisplay : MonoBehaviour
         }
 
         _playButton.onClick.RemoveAllListeners();
-        _playButton.onClick.AddListener(() => SceneManager.LoadScene(map.sceneToLoad.name));
+        //_playButton.onClick.AddListener(() => SceneManager.LoadScene(map.sceneToLoad.name));
     }
 }
