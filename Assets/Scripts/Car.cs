@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Car : MonoBehaviour
 {
@@ -11,10 +12,17 @@ public class Car : MonoBehaviour
     [SerializeField] private WheelTrigger wheelTrigger2;
     private JointMotor2D motor = new JointMotor2D();
     private int moveDir = 0;
+
+    //Мой код здесь //
+    [Header("Health")]
+    [SerializeField] private float Health;
+    [SerializeField] private Image HealthBar;
+    public static Rigidbody2D rb;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -49,7 +57,15 @@ public class Car : MonoBehaviour
             wheels[0].motor = motor;
             wheels[1].motor = motor;
         }
+
+/*        // мой тестовый код - УДАЛИТЬ ПОТОМ //
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            GetDamage();
+        }*/
     }
+
+
 
     private void FixedUpdate()
     {
@@ -116,6 +132,19 @@ public class Car : MonoBehaviour
 
             }*/
 
+        }
+    }
+
+    // Мой код здесь //
+    public void GetDamage(float damage)
+    {
+        Health -= damage;
+        HealthBar.fillAmount = Health * 0.01f;
+
+        if (Health <= 0)
+        {
+            print("Destroyed");
+            Destroy(gameObject);
         }
     }
 }
