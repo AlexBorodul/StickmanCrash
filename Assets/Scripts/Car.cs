@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -18,11 +19,13 @@ public class Car : MonoBehaviour
     [SerializeField] private float Health;
     [SerializeField] private Image HealthBar;
     public static Rigidbody2D rb;
+    [SerializeField] private GameObject EndPanel;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        EndPanel.SetActive(false);
     }
 
     // Update is called once per frame
@@ -144,7 +147,13 @@ public class Car : MonoBehaviour
         if (Health <= 0)
         {
             print("Destroyed");
-            Destroy(gameObject);
+            OnDestroy();
         }
+    }
+
+    public void OnDestroy()
+    {
+        Destroy(gameObject);
+        EndPanel.SetActive(true);
     }
 }
