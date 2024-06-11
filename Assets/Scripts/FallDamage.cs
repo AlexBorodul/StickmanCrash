@@ -19,7 +19,7 @@ public class FallDamage : MonoBehaviour
             /*            Debug.Log("Damage");*/
             print("Damage from bottom");
             var dam = (-damage_y) * 2;
-            scoreManager.addScore(dam);
+            scoreManager.addScore(Mathf.Abs(dam));
             car.GetDamage(dam);
         }
 
@@ -28,7 +28,7 @@ public class FallDamage : MonoBehaviour
             /*            Debug.Log("Damage");*/
             print("Damage from obstacle");
             var dam = damage_x * 2;
-            scoreManager.addScore(dam);
+            scoreManager.addScore(Mathf.Abs(dam));
             if (damage_x >= 0)
             {
                 car.GetDamage(dam);

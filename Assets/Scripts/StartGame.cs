@@ -6,6 +6,8 @@ public class StartGame : MonoBehaviour
 {
     [SerializeField] private GameObject _startingButtons;
     [SerializeField] private GameObject _chooseTransport;
+    [SerializeField] private GameObject pauseMenu;
+    public bool isGameStarted = false;
     void Start()
     {
         _startingButtons.SetActive(true);
@@ -15,13 +17,23 @@ public class StartGame : MonoBehaviour
 
     public void ClickOnChooseTransport()
     {
-        _chooseTransport.SetActive(true);
+        if (!pauseMenu.activeSelf)
+        {
+            _chooseTransport.SetActive(!_chooseTransport.activeSelf);
+            _chooseTransport.GetComponent<ChooseTransport>().index = 0;
+        }
+            
     }
 
     public void ClickOnStart()
     {
-        _startingButtons.SetActive(false);
-        _chooseTransport.SetActive(false);
-        Time.timeScale = 1;
+        if (ChooseTransport.isVehicleAvailable)
+        {
+            _startingButtons.SetActive(false);
+            _chooseTransport.SetActive(false);
+            Time.timeScale = 1;
+            isGameStarted = true;
+        }
+        
     }
 }
