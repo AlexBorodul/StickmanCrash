@@ -7,6 +7,8 @@ public class Paused : MonoBehaviour
 {
     [SerializeField]
     GameObject pause;
+    [SerializeField] private GameObject buttonStart;
+    [SerializeField] private GameObject chooseTransport;
     void Start()
     {
         pause.SetActive(false);
@@ -24,6 +26,11 @@ public class Paused : MonoBehaviour
 
     public void PauseOn()
     {
+        
+        if (chooseTransport.activeSelf)
+        {
+            buttonStart.GetComponent<StartGame>().ClickOnChooseTransport();
+        }
         pause.SetActive(true);
         Time.timeScale = 0;
     }
@@ -31,7 +38,8 @@ public class Paused : MonoBehaviour
     public void PauseOff()
     {
         pause.SetActive(false);
-        Time.timeScale = 1;
+        if(buttonStart.GetComponent<StartGame>().isGameStarted)
+            Time.timeScale = 1;
     }
 
     public void Menu()
