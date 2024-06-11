@@ -153,7 +153,7 @@ public class Car : MonoBehaviour
 
     public void OnDestroy()
     {
-        Destroy(gameObject);
+        gameObject.SetActive(false);
         EndPanel.SetActive(true);
     }
 }

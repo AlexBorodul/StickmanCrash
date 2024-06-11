@@ -10,6 +10,7 @@ public class FinalTextManager : MonoBehaviour
     [SerializeField] private ScoreManager _scoreManager;
     void Update()
     {
-        _text.text = _scoreManager.viewScore();
+        /*_text.text = _scoreManager.viewScore();*/
+        _text.GetComponent<TMP_Text>().text = _scoreManager.viewScore();
     }
 }

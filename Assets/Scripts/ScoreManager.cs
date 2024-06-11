@@ -1,13 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
-using TMPro.EditorUtilities;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
 public class ScoreManager : MonoBehaviour
 {
-    private float score = 0;
+    public float score = 0;
     [SerializeField] private TMP_Text _scoreText;
     void Update()
     {
